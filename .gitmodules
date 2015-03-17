@@ -1,0 +1,3 @@
+[submodule "wordset-ui"]
+	path = wordset-ui
+	url = git@github.com:turboMaCk/wordset-ui.git
