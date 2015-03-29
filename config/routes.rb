@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  root :to => redirect("/docs"), only_path: false
+  mount EmberCLI::Engine => "ember-tests" if Rails.env.development?
   mount Wordset::API => "/api"
   mount GrapeSwaggerRails::Engine, at: "/docs"
+
+  # fronted routes
+  root :to => 'ember#frontend'
+  get '*route' => 'ember#frontend', :format => false
 end

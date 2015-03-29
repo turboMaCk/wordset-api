@@ -7,6 +7,7 @@ require 'airborne'
 require "pusher-fake/support/rspec"
 require_relative 'support/voting_spec_helper'
 require_relative 'support/login_helper'
+require 'capybara/rails'
 
 # Add additional requires below this line. Rails is not loaded until this point!
 

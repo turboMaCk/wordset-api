@@ -41,6 +41,9 @@ gem 'bson'
 
 gem 'thin'
 
+# integrate ember-cli
+gem 'ember-cli-rails'
+
 group :production do
   gem "gibbon"
 end
@@ -71,6 +74,7 @@ group :development, :test do
   gem "rspec-rails"
   gem 'spring-commands-rspec'
   gem 'guard-rspec'
+  gem 'capybara'
   #gem 'rb-fsevent' if `uname` =~ /Darwin/
   #gem "rubocop"
   #gem "shoulda-matchers"
